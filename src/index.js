@@ -18,7 +18,7 @@ function fetchEvents() {
         }
 
     })*/
-    return fetch(`https://app.ticketmaster.com/discovery/v2/suggest.json?${searchParams}`)
+    return fetch(`https://app.ticketmaster.com/discovery/v2/suggest.json?${searchParams}`) //Just checking if the API call works
 }
 
 fetchEvents().then(
