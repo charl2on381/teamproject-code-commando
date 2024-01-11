@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: black;
+}
+
+.logo {
+position: absolute;
+top:-229px; /* I just divided the height by 2 and put a minus sign in front of the answer to remove the excess part of the Ellipse*/
+left:-193px; /* I just divided the width by 2 and put a minus sign in front of the answer to remove the excess part of the Ellipse*/
+width: 386px;
+height: 458px;
+transform: rotate(90deg);
+flex-shrink: 0;
+border-radius: 458px;
+background: linear-gradient(136deg, rgba(196, 196, 196, 0.03) 10.75%, rgba(196, 196, 196, 0.00) 92.33%);
+backdrop-filter: blur(15px);
+
+}
+
+.header__container{
+    position: relative;
+    height: 446px;
+    flex-shrink: 0;
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.19),rgba(14, 14, 14, 0.8)), url(../images/Header\ Background.jpg);
+    
+    background-repeat: no-repeat;
+    
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.heading{
+    width: 608px;
+    color: #DC56C5;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
