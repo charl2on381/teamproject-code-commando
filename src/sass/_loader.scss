@@ -1,0 +1,118 @@
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  background-color: var(--black);
+}
+
+.logo-circle {
+  position: relative;
+  left: 45%;
+  top: 45%;
+  width: 100%;
+
+   &:before,
+   &:after {
+     content: '';
+     position: relative;
+     border-radius: 20%;
+     animation-duration: 5.8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+   }
+
+   &:before {
+     width: 100%;
+   }
+
+   &:after {
+    width: calc(100% - #{1px}* 2);
+    box-shadow: 0 0 0 0 var(--loader-shadow);
+    animation-name: pulsB;
+   }
+ }
+.loader-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 400px;
+    height: 400px;
+}
+
+
+@keyframes s1 {
+  to {
+    transform: rotate(.5turn)
+  }
+}
+
+@function strokeDashoffset($num) {
+  @return 440 - calc((440 * $num) / 100);
+}
+
+.loader-logo {
+  width: 190px;
+
+}
+.loader-progressbar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  z-index: 150;
+}
+
+
+.loader-progressbar-svg {
+  width: 100%;
+  height: 100%;  
+}
+.custom-loader {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 20px solid;
+  border-color: #B92EF4 #d3caca02;
+  animation: s1 2s infinite;
+  transition-property: animation;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loader-progressbar-svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 20;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: var(--cloud);
+  stroke-linecap: round;
+  transform: translate(20px, 20px);
+}
+
+.loader-circle-shadow {
+    filter: drop-shadow(0 0 7px var(--loader-shadow));
+}
+
+.circle {
+  &-html {
+    animation: anim_circle-html 5s ease-in-out forwards;
+  }
+}
+
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: strokeDashoffset(1000);
+  }
+}
