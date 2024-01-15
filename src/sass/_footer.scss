@@ -89,14 +89,14 @@ a {
   /* for Chrome, Safari, and Opera */
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .modal-window {
     min-height: 609px;
     // width: 450px;
   }
 }
 
-@media screen and (min-width: 428px) and (max-width: 767px) {
+@media screen and (min-width: 1158px)  {
   .modal-window {
     // width: 450px;
     height: 609px;
