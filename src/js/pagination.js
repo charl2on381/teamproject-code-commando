@@ -4,6 +4,7 @@ import renderCards from './main-cards';
 
 const cardEvents = document.querySelector('.main-cards');
 let pagination;
+// pagination
 
 const renderPagination = pageInfo => {
   let totalEl;
