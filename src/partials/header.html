@@ -1,0 +1,144 @@
+<header class="header">
+  <nav class="logo">
+    <a href="./index.html">
+      <svg class="logo-icon">
+        <use href="./images/icon-sprite.svg#logo"></use>
+      </svg>
+    </a>
+  </nav>
+  <div class="header-content container">
+    <h1 class="header-title">
+      <div class="sign">
+
+        <span class="flicker glow">FIND BEST EVENT</span><br/>
+        <span class="glow">AROUND THE WORLD</span>
+      </div>
+    </h1>
+
+    <div class="header-field-container">
+      <form>
+        <div class="header-field">
+
+          <input type="text" name="search-event" placeholder="Start searching" autocomplete="off"
+            class="header-input search-input" />
+          <button class="btn-submit" type="submit">
+            <svg class="btn-icon" width="12px" height="12px">
+              <use href="./images/icon-sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header-field">
+          <div>
+            <input id="chose-country" type="text" name="search-event" placeholder="Choose country" class="header-input"
+              autocomplete="off" />
+            <svg id="searchCountryIcon" class="input-icon" width="15px" height="10px">
+              <use href="./images/icon-sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+    
+          
+          <div class="country hide">
+            <ul class="country-list">
+
+              <li class="country-item" data-country="">All countries</li>
+              <li class="country-item" data-country="US">United States Of America</li>
+              <li class="country-item" data-country="AD">Andorra</li>
+              <li class="country-item" data-country="AI">Anguilla</li>
+              <li class="country-item" data-country="AR">Argentina</li>
+              <li class="country-item" data-country="AU">Australia</li>
+              <li class="country-item" data-country="AT">Austria</li>
+              <li class="country-item" data-country="AZ">Azerbaijan</li>
+              <li class="country-item" data-country="BS">Bahamas</li>
+              <li class="country-item" data-country="BH">Bahrain</li>
+              <li class="country-item" data-country="BB">Barbados</li>
+              <li class="ccountry-item" data-country="BE">Belgium</li>
+              <li class="country-item" data-country="BM">Bermuda</li>
+              <li class="country-item" data-country="BR">Brazil</li>
+              <li class="country-item" data-country="BG">Bulgaria</li>
+              <li class="country-item" data-country="CA">Canada</li>
+              <li class="country-item" data-country="CL">Chile</li>
+              <li class="country-item" data-country="CN">China</li>
+              <li class="country-item" data-country="CO">Colombia</li>
+              <li class="country-item" data-country="CR">Costa Rica</li>
+              <li class="country-item" data-country="HR">Croatia</li>
+              <li class="country-item" data-country="CY">Cyprus</li>
+              <li class="country-item" data-country="CZ">Czech Republic</li>
+              <li class="country-item" data-country="DK">Denmark</li>
+              <li class="country-item" data-country="DO">Dominican Republic</li>
+              <li class="country-item" data-country="EC">Ecuador</li>
+              <li class="country-item" data-country="EE">Estonia</li>
+              <li class="country-item" data-country="FO">Faroe Islands</li>
+              <li class="country-item" data-country="FI">Finland</li>
+              <li class="country-item" data-country="FR">France</li>
+              <li class="country-item" data-country="GE">Georgia</li>
+              <li class="country-item" data-country="DE">Germany</li>
+              <li class="country-item" data-country="GH">Ghana</li>
+              <li class="country-item" data-country="GI">Gibraltar</li>
+              <li class="country-item" data-country="GB">Great Britain</li>
+              <li class="country-item" data-country="GR">Greece</li>
+              <li class="country-item" data-country="HK">Hong Kong</li>
+              <li class="country-item" data-country="HU">Hungary</li>
+              <li class="country-item" data-country="IS">Iceland</li>
+              <li class="country-item" data-country="IN">India</li>
+              <li class="country-item" data-country="IE">Ireland</li>
+              <li class="country-item" data-country="IL">Israel</li>
+              <li class="country-item" data-country="IT">Italy</li>
+              <li class="country-item" data-country="JM">Jamaica</li>
+              <li class="country-item" data-country="JP">Japan</li>
+              <li class="country-item" data-country="KR">Republic of Korea</li>
+              <li class="country-item" data-country="LV">Latvia</li>
+              <li class="country-item" data-country="LB">Lebanon</li>
+              <li class="country-item" data-country="LT">Lithuania</li>
+              <li class="country-item" data-country="LU">Luxembourg</li>
+              <li class="country-item" data-country="MY">Malaysia</li>
+              <li class="country-item" data-country="MT">Malta</li>
+              <li class="country-item" data-country="MX">Mexico</li>
+              <li class="country-item" data-country="MC">Monaco</li>
+              <li class="country-item" data-country="ME">Montenegro</li>
+              <li class="country-item" data-country="MA">Morocco</li>
+              <li class="country-item" data-country="NL">Netherlands</li>
+              <li class="country-item" data-country="AN">
+                Netherlands Antilles
+              </li>
+              <li class="country-item" data-country="NM">New Zealand</li>
+              <li class="country-item" data-country="ND">Northern Ireland</li>
+              <li class="country-item" data-country="NO">Norway</li>
+              <li class="country-item" data-country="PE">Peru</li>
+              <li class="country-item" data-country="PL">Poland</li>
+              <li class="country-item" data-country="PT">Portugal</li>
+              <li class="country-item" data-country="RO">Romania</li>
+              <li class="country-item" data-country="RU">
+                Russian Federation
+              </li>
+              <li class="country-item" data-country="LC">Saint Lucia</li>
+              <li class="country-item" data-country="SA">Saudi Arabia</li>
+              <li class="country-item" data-country="RS">Serbia</li>
+              <li class="country-item" data-country="SG">Singapore</li>
+              <li class="country-item" data-country="SK">Slovakia</li>
+              <li class="country-item" data-country="SI">Slovenia</li>
+              <li class="country-item" data-country="ZA">South Africa</li>
+              <li class="country-item" data-country="ES">Spain</li>
+              <li class="country-item" data-country="SE">Sweden</li>
+              <li class="country-item" data-country="CH">Switzerland</li>
+              <li class="country-item" data-country="TW">Taiwan</li>
+              <li class="country-item" data-country="TH">Thailand</li>
+              <li class="country-item" data-country="TT">
+                Trinidad and Tobago
+              </li>
+              <li class="country-item" data-country="TR">Turkey</li>
+              <li class="country-item" data-country="UA">Ukraine</li>
+              <li class="country-item" data-country="AE">
+                United Arab Emirates
+              </li>
+              <li class="country-item" data-country="UY">Uruguay</li>
+              <li class="country-item" data-country="VE">Venezuela</li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="header-gradient"></div>
+  </div>
+</header>

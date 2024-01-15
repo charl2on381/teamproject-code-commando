@@ -1,0 +1,65 @@
+.spinner {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  padding: 2px;
+  position: fixed;
+  top: 47%;
+  left: 48%;
+  transition: opacity 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  z-index: 100;
+}
+
+.spinner-show {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.spinner .spinner-ring , .spinner-ring-2{
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  animation: fingerprint-spinner-animation 1500ms
+    cubic-bezier(0.68, -0.75, 0.265, 1.75) infinite forwards;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.spinner .spinner-ring{
+border-top-color: var(--loader-ring);
+box-shadow: 5px -25px 25px 15px var(--cards-image-shadow);
+}
+.spinner-ring-2{
+  border-top-color: var(--cloud);
+}
+
+
+.spinner .spinner-ring:nth-child(2) {
+  height: calc(60px / 9 + 1 * 60px / 9);
+  width: calc(60px / 9 + 1 * 60px / 9);
+  animation-delay: calc(50ms * 2);
+  border-top-color: var(--loader-ring);
+}
+
+.spinner .spinner-ring:nth-child(3) {
+  height: calc(60px / 9 + 2 * 60px / 9);
+  width: calc(60px / 9 + 2 * 60px / 9);
+  animation-delay: calc(150ms * 3);
+}
+
+.spinner .spinner-ring:nth-child(5) {
+  height: calc(60px / 9 + 4 * 60px / 9);
+  width: calc(60px / 9 + 4 * 60px / 9);
+  animation-delay: calc(350ms * 15);
+}
+
+@keyframes fingerprint-spinner-animation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
