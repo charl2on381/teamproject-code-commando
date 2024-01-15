@@ -16,6 +16,7 @@ const whoElemMob = document.querySelector('.event__who-mob');
 const pricesElem = document.querySelector('.event__prices');
 const cardsElem = document.querySelector('.main-cards');
 const moreAuthorBtn = document.querySelector('.event__btn2');
+const moreAuthorBtnMob = document.querySelector('.event__btn2-mob');
 
 MicroModal.init();
 
@@ -31,6 +32,7 @@ export async function updateModalData(eventId) {
 
   let nameArtist = eventData.name;
   moreAuthorBtn.dataset.name = nameArtist;
+  moreAuthorBtnMob.dataset.name = nameArtist;
   modalTopImage.innerHTML = '';
   eventImageElem.innerHTML = '';
   pricesElem.innerHTML = '';
